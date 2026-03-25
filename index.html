@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRUST Coaching & Consulting – Khai phá tiềm năng, Khẳng định vị thế</title>
+    <meta name="description"
+        content="Hệ sinh thái khai vấn huấn luyện tiêu chuẩn quốc tế giúp tối ưu hóa năng lực lãnh đạo và hiệu suất đội ngũ. TRUST Coaching & Consulting.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=19">
+</head>
+
+<body>
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="#" class="logo">
+                <img src="logo_trust_pure_transparent.png" alt="TRUST Logo" class="logo__img logo__img--light">
+                <img src="logo-trust.png" alt="TRUST Logo" class="logo__img logo__img--dark">
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="#hero" class="nav__link">Trang chủ</a></li>
+                    <li><a href="#about" class="nav__link">Về chúng tôi</a></li>
+                    <li><a href="#solutions" class="nav__link">Giải pháp Doanh nghiệp</a></li>
+                    <li><a href="#partners" class="nav__link">Đối tác</a></li>
+                    <li><a href="#coachgen" class="nav__link">CoachGEN</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="btn btn--primary header__cta" style="text-transform: uppercase;">Liên hệ</a>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+        <video autoplay muted loop playsinline preload="auto" poster="trust-team-new.png" class="hero__video" style="display: block !important; visibility: visible !important;">
+            <source src="nentrust.mp4" type="video/mp4">
+        </video>
+        <div class="hero__bg"></div>
+        <div class="hero__overlay"></div>
+        <script>
+            window.addEventListener('load', () => {
+                const v = document.querySelector('.hero__video');
+                if (v) {
+                    v.playbackRate = 0.6;
+                    v.play().then(() => console.log('Video playing')).catch(e => console.error('Video play error:', e));
+                    v.addEventListener('error', (e) => console.error('Video error event:', e));
+                } else {
+                    console.error('Video element not found');
+                }
+            });
+        </script>
+        <div class="container hero__content">
+            <p class="hero__tag animate-fade-up">TRUST Coaching & Consulting</p>
+            <h1 class="hero__title animate-fade-up" style="animation-delay:.1s">
+                <span class="hero__title-en">TRANSFORM PEOPLE – TRANSCEND ORGANIZATION</span>
+                <span class="hero__title-vi">Khai phá tiềm năng nhân sự — Khẳng định vị thế thương hiệu đội ngũ</span>
+            </h1>
+            <p class="hero__sub animate-fade-up" style="animation-delay:.25s">Hệ sinh thái khai vấn huấn luyện tiêu
+                chuẩn quốc tế giúp tối ưu hóa năng lực lãnh đạo và hiệu suất đội ngũ.</p>
+            <div class="hero__cta animate-fade-up" style="animation-delay:.4s">
+                <a href="#about" class="btn btn--primary btn--lg">Tìm hiểu thêm</a>
+                <a href="#contact" class="btn btn--outline btn--lg">Đăng ký giải pháp</a>
+            </div>
+            <div class="hero__trust animate-fade-up" style="animation-delay:.55s">
+                <div class="trust-pill">
+                    <img src="logo-icf.png" alt="ICF" class="trust-pill__img">
+                    <div class="trust-pill__divider"></div>
+                    <img src="logo-ac.png" alt="AC" class="trust-pill__img">
+                    <div class="trust-pill__divider"></div>
+                    <img src="logo-iaf.png" alt="IAF" class="trust-pill__img">
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <span>Cuộn xuống</span>
+            <svg width="20" height="20" viewBox="0 0 20 20">
+                <path d="M10 4v12M5 11l5 5 5-5" stroke="currentColor" stroke-width="1.5" fill="none"
+                    stroke-linecap="round" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- ========== PARTNERS LOGOS ========== -->
+    <section class="partners" id="partners">
+        <div class="container">
+            <p class="partners__label">Đối tác sử dụng dịch vụ</p>
+            <div class="partners__track">
+                <div class="partners__slide">
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (1).jpg" alt="Partner 1"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (2).jpg" alt="Partner 2"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (3).jpg" alt="Partner 3"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (4).jpg" alt="Partner 4"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (5).jpg" alt="Partner 5"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (6).jpg" alt="Partner 6"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (7).jpg" alt="Partner 7"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (8).jpg" alt="Partner 8"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (9).jpg" alt="Partner 9"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (10).jpg" alt="Partner 10"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (11).jpg" alt="Partner 11"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (12).jpg" alt="Partner 12"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (13).jpg" alt="Partner 13"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (14).jpg" alt="Partner 14"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (15).jpg" alt="Partner 15"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (16).jpg" alt="Partner 16"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (17).jpg" alt="Partner 17"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (18).jpg" alt="Partner 18"></div>
+                    <!-- duplicate for infinite scroll -->
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (1).jpg" alt="Partner 1"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (2).jpg" alt="Partner 2"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (3).jpg" alt="Partner 3"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (4).jpg" alt="Partner 4"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (5).jpg" alt="Partner 5"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (6).jpg" alt="Partner 6"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (7).jpg" alt="Partner 7"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (8).jpg" alt="Partner 8"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (9).jpg" alt="Partner 9"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (10).jpg" alt="Partner 10"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (11).jpg" alt="Partner 11"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (12).jpg" alt="Partner 12"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (13).jpg" alt="Partner 13"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (14).jpg" alt="Partner 14"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (15).jpg" alt="Partner 15"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (16).jpg" alt="Partner 16"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (17).jpg" alt="Partner 17"></div>
+                    <div class="partner-logo"><img src="logo doi tac/logo-partner- (18).jpg" alt="Partner 18"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT COACHING ========== -->
+    <section class="about" id="about">
+        <div class="container">
+            <!-- What coaching brings -->
+            <div class="section-header">
+                <span class="section-tag animate-on-scroll">Giá trị của Coaching</span>
+                <h2 class="section-title animate-on-scroll">Khai vấn huấn luyện (Coaching) mang đến điều gì
+                    cho<br><em>Doanh chủ & Doanh nghiệp?</em></h2>
+            </div>
+
+            <!-- Stats Row -->
+            <div class="stats-row animate-on-scroll">
+                <div class="stat-card">
+                    <span class="stat-card__number" data-target="80">0</span><span class="stat-card__unit">%</span>
+                    <p class="stat-card__label">Cải thiện sự tự tin</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-card__number" data-target="70">0</span><span class="stat-card__unit">%</span>
+                    <p class="stat-card__label">Nâng cao hiệu suất làm việc</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-card__number" data-target="72">0</span><span class="stat-card__unit">%</span>
+                    <p class="stat-card__label">Cải thiện kỹ năng giao tiếp</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-card__number" data-target="67">0</span><span class="stat-card__unit">%</span>
+                    <p class="stat-card__label">Cải thiện cân bằng cuộc sống</p>
+                </div>
+            </div>
+
+            <!-- Coaching Is / Is Not -->
+            <div class="coaching-explain animate-on-scroll">
+                <div class="coaching-card coaching-card--is">
+                    <div class="coaching-card__icon">✓</div>
+                    <h3>Khai vấn huấn luyện <strong>LÀ</strong></h3>
+                    <p>Quá trình đồng hành chuyên nghiệp nhằm kích hoạt tư duy, giúp cá nhân tự tìm ra giải pháp trong
+                        công việc, giúp tối ưu hóa hiệu suất làm việc và văn hoá tự chủ – đồng hành của tổ chức.</p>
+                </div>
+                <div class="coaching-card coaching-card--not">
+                    <div class="coaching-card__icon">✕</div>
+                    <h3>Khai vấn huấn luyện <strong>KHÔNG LÀ</strong></h3>
+                    <p>Đưa ra lời khuyên (Consulting), đào tạo kỹ năng một chiều (Training), trị liệu tâm lý (Therapy)
+                        hay dùng kinh nghiệm cá nhân để áp đặt lộ trình (Mentoring).</p>
+                </div>
+            </div>
+
+            <!-- Beautiful Framed Image -->
+            <div class="about-image-frame animate-on-scroll">
+                <div class="about-image-frame__inner">
+                    <img src="trust-team-cert.jpg" alt="TRUST Team">
+                </div>
+            </div>
+
+            <!-- TRUST Introduction -->
+            <div class="trust-intro animate-on-scroll">
+                <div class="trust-intro__badge">TRUST</div>
+                <h3 class="trust-intro__title">TRUST Coaching & Consulting</h3>
+                <p>Chúng tôi tạo dựng nền tảng khai vấn huấn luyện giúp các cá nhân và tổ chức phát triển tiềm năng, tối
+                    ưu hóa năng lực và đạt được những thành tựu bền vững.</p>
+                <p>Tại TRUST, chúng tôi tin rằng khai vấn không chỉ là một công cụ đào tạo, mà là <strong>giải pháp
+                        chiến lược</strong> để tạo ra sự chuyển đổi mạnh mẽ từ tư duy bên trong, dẫn đến những thay đổi
+                    đột phá về hành vi và hiệu suất bên ngoài.</p>
+            </div>
+
+            <!-- TRUST Model -->
+            <div class="trust-model animate-on-scroll">
+                <h3 class="trust-model__title">Mô hình của TRUST</h3>
+                <div class="model-pills">
+                    <div class="model-pill">
+                        <div class="model-pill__icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span class="model-pill__en">Consulting</span>
+                        <span class="model-pill__vi">Tư vấn</span>
+                    </div>
+                    <div class="model-pill">
+                        <div class="model-pill__icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 12.5V18a2 2 0 002 2h8a2 2 0 002-2v-5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span class="model-pill__en">Training</span>
+                        <span class="model-pill__vi">Đào tạo</span>
+                    </div>
+                    <div class="model-pill model-pill--featured">
+                        <div class="model-pill__icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32">
+                                <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                                <circle cx="12" cy="12" r="4" fill="currentColor"/>
+                                <path d="M12 2v2M12 20v2M2 12h2M20 12h2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span class="model-pill__en">Coaching</span>
+                        <span class="model-pill__vi">Huấn luyện</span>
+                    </div>
+                    <div class="model-pill">
+                        <div class="model-pill__icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="9" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span class="model-pill__en">Mentoring</span>
+                        <span class="model-pill__vi">Kèm cặp</span>
+                    </div>
+                    <div class="model-pill">
+                        <div class="model-pill__icon">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span class="model-pill__en">Facilitation</span>
+                        <span class="model-pill__vi">Điều phối</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core DNA Values -->
+            <div class="dna animate-on-scroll">
+                <h3 class="dna__title">Giá trị cốt lõi – <em>The DNA</em></h3>
+                <div class="dna__cards">
+                    <div class="dna__card">
+                        <span class="dna__num">01</span>
+                        <h4>Tôn trọng</h4>
+                        <p>Respect</p>
+                    </div>
+                    <div class="dna__card">
+                        <span class="dna__num">02</span>
+                        <h4>Hợp tác</h4>
+                        <p>Teamwork</p>
+                    </div>
+                    <div class="dna__card">
+                        <span class="dna__num">03</span>
+                        <h4>Phát triển</h4>
+                        <p>Growth</p>
+                    </div>
+                </div>
+                <p class="dna__motto">TRUST yourself – TRUST your team – TRUST your partner</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TEAM & PARTNERS ========== -->
+    <section class="team section-padding" id="team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-on-scroll">Đội ngũ</span>
+                <h2 class="section-title animate-on-scroll">Chuyên gia & Đối tác</h2>
+                <p class="section-desc animate-on-scroll">Các chuyên gia Khai vấn và Huấn luyện hàng đầu đồng hành cùng bạn.</p>
+            </div>
+            <div class="team__grid">
+                <!-- Row 1 -->
+                <!-- Expert 1: Đặng Minh Sơn -->
+                <div class="team-card">
+                    <div class="team-card__logo">
+                        <img src="logo-trust.png" alt="TRUST" class="expert-logo">
+                    </div>
+                    <div class="team-card__image-wrapper">
+                        <div class="team-card__image">
+                            <img src="team-son.jpg" alt="Đặng Minh Sơn">
+                        </div>
+                    </div>
+                    <div class="team-card__content">
+                        <span class="team-card__cert">ICF PCC – TRUST</span>
+                        <h3 class="team-card__name">Đặng Minh Sơn <img src="icf-pcc.png" alt="ICF PCC" class="name-badge"></h3>
+                        <p class="team-card__role">Đồng sáng lập TRUST Coaching & Consulting</p>
+                        <ul class="team-card__bio" style="margin-top: 0;">
+                            <li>Chuyên gia Khai vấn cấp độ PCC từ ICF</li>
+                            <li>Khai vấn Lãnh đạo (Leadership Coach)</li>
+                            <li>Huấn luyện đội ngũ hiệu suất cao (High Performance Coach)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Expert 2: Cecilia Anh Vân -->
+                <div class="team-card">
+                    <div class="team-card__logo">
+                        <img src="logo-trust.png" alt="TRUST" class="expert-logo">
+                    </div>
+                    <div class="team-card__image-wrapper">
+                        <div class="team-card__image">
+                            <img src="team-van.jpg" alt="Cecilia Anh Vân">
+                        </div>
+                    </div>
+                    <div class="team-card__content">
+                        <span class="team-card__cert">ICF PCC – TRUST</span>
+                        <h3 class="team-card__name">Cecilia Anh Vân <img src="icf-pcc.png" alt="ICF PCC" class="name-badge"></h3>
+                        <p class="team-card__role">Đồng sáng lập TRUST Coaching & Consulting</p>
+                        <ul class="team-card__bio" style="margin-top: 0;">
+                            <li>Chuyên gia Khai vấn cấp độ PCC từ ICF</li>
+                            <li>Khai vấn Thương hiệu cá nhân (Personal Branding Coach)</li>
+                            <li>Thương hiệu đội ngũ (Resonance Branding)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Expert 3: Phạm Minh Trang -->
+                <div class="team-card">
+                    <div class="team-card__logo">
+                        <img src="logo-trust.png" alt="TRUST" class="expert-logo">
+                    </div>
+                    <div class="team-card__image-wrapper">
+                        <div class="team-card__image">
+                            <img src="team-phamtrang.jpg" alt="Phạm Minh Trang">
+                        </div>
+                    </div>
+                    <div class="team-card__content">
+                        <span class="team-card__cert">Coach and Mentor ICF - TRUST</span>
+                        <h3 class="team-card__name">Phạm Minh Trang</h3>
+                        <p class="team-card__role">Đồng sáng lập TRUST Coaching & Consulting</p>
+                        <ul class="team-card__bio" style="margin-top: 0;">
+                            <li>Chuyên gia Khai vấn tâm lý điều hành</li>
+                            <li>Nhà đào tạo Doanh nghiệp Hạnh phúc</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <!-- Expert 4: Nguyễn Mạnh Hải -->
+                <div class="team-card">
+                    <div class="team-card__logo">
+                        <img src="logo-tuevan.png" alt="Tuệ Vấn" class="expert-logo">
+                    </div>
+                    <div class="team-card__image-wrapper">
+                        <div class="team-card__image">
+                            <img src="team-hai.jpg" alt="Nguyễn Mạnh Hải">
+                        </div>
+                    </div>
+                    <div class="team-card__content">
+                        <span class="team-card__cert">ICF PCC - Tuệ Vấn</span>
+                        <h3 class="team-card__name">Nguyễn Mạnh Hải <img src="icf-pcc.png" alt="ICF PCC" class="name-badge"></h3>
+                        <p class="team-card__role">Đồng sáng lập Tuệ Vấn</p>
+                        <ul class="team-card__bio">
+                            <li>Coach chứng nhận PCC của ICF và ITCA Senior Practitioner của EMCC</li>
+                            <li>Hơn 2.000 giờ coaching thực tế</li>
+                            <li>Hơn 20 năm kinh nghiệm quản lý, Thạc sĩ MBA tại IE Business School</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Expert 5: Đinh Ngọc Minh Trang -->
+                <div class="team-card">
+                    <div class="team-card__logo">
+                        <img src="logo-tuevan.png" alt="Tuệ Vấn" class="expert-logo">
+                    </div>
+                    <div class="team-card__image-wrapper">
+                        <div class="team-card__image">
+                            <img src="team-minhtrang.jpg" alt="Đinh Ngọc Minh Trang">
+                        </div>
+                    </div>
+                    <div class="team-card__content">
+                        <span class="team-card__cert">TEIQue™ Coach - Tuệ Vấn</span>
+                        <h3 class="team-card__name">Đinh Ngọc Minh Trang</h3>
+                        <p class="team-card__role">Đồng sáng lập Tuệ Vấn</p>
+                        <ul class="team-card__bio">
+                            <li>Chuyên gia Khai vấn Trí tuệ Cảm xúc – TEIQue™ Certified Coach (LPL)</li>
+                            <li>Chuyên gia Trợ hành Đội nhóm – Agile Team Facilitation (ICP-ATF)</li>
+                            <li>Huấn luyện viên Yoga RYT 200 và Inside Flow</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Expert 6: Lương Dũng Nhân -->
+                <div class="team-card">
+                    <div class="team-card__logo">
+                        <img src="logo-wise.png" alt="Wise Education" class="expert-logo">
+                    </div>
+                    <div class="team-card__image-wrapper">
+                        <div class="team-card__image">
+                            <img src="team-nhan.jpg" alt="Lương Dũng Nhân">
+                        </div>
+                    </div>
+                    <div class="team-card__content">
+                        <span class="team-card__cert">Khai phóng Tiềm năng cùng AI</span>
+                        <h3 class="team-card__name">Lương Dũng Nhân <img src="icf-pcc.png" alt="ICF PCC" class="name-badge"></h3>
+                        <p class="team-card__role">Chuyên gia Khai vấn & AI</p>
+                        <ul class="team-card__bio">
+                            <li>Chứng chỉ PCC của ICF và nghiên cứu chuyên sâu về Tâm lý học</li>
+                            <li>Nghiên cứu sinh Tiến sĩ Giáo dục, chuyên gia Generative AI</li>
+                            <li>Thạc sĩ Giáo dục (M.Ed), Giám đốc Đào tạo Hệ thống ATY</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SOLUTIONS ========== -->
+    <section class="solutions" id="solutions">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-on-scroll">Dịch vụ</span>
+                <h2 class="section-title animate-on-scroll">Các giải pháp của TRUST</h2>
+            </div>
+            <div class="solutions__grid animate-on-scroll">
+                <div class="solution-card">
+                    <div class="solution-card__photo">
+                        <img src="solution-a.png" alt="Tư vấn Chiến lược">
+                    </div>
+                    <h3>Tư vấn Chiến lược Thương hiệu & Đào tạo/ Huấn luyện Thương hiệu đội ngũ</h3>
+                    <p>Xây dựng và định hình thương hiệu doanh nghiệp thông qua phát triển đội ngũ, chiến lược nhận diện
+                        và truyền thông nội bộ.</p>
+                    <a href="#contact" class="solution-card__link">Tìm hiểu thêm →</a>
+                </div>
+                <div class="solution-card solution-card--featured">
+                    <div class="solution-card__photo">
+                        <img src="solution-b-new.png" alt="Đào tạo Khai vấn">
+                    </div>
+                    <h3>Đào tạo – Cấp chứng chỉ Khai vấn huấn luyện cho đội ngũ Quản lý/ Lãnh đạo</h3>
+                    <p>Chương trình đào tạo bài bản theo tiêu chuẩn ICF, trang bị năng lực khai vấn cho Manager/Leader
+                        trong tổ chức.</p>
+                    <a href="#contact" class="solution-card__link">Tìm hiểu thêm →</a>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-card__photo">
+                        <img src="solution-c-highres.png" alt="Executive Coaching">
+                    </div>
+                    <h3>Khai vấn Huấn luyện Lãnh đạo 1:1 (Executive Coaching)</h3>
+                    <p>Đồng hành cá nhân hóa cho HĐQT và lãnh đạo cấp cao, giải quyết các bài toán điều hành chiến lược.
+                    </p>
+                    <a href="#contact" class="solution-card__link">Tìm hiểu thêm →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== VIDEO ========== -->
+    <section class="video-section" id="video">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-on-scroll">Video</span>
+                <h2 class="section-title animate-on-scroll">Câu chuyện TRUST</h2>
+                <p class="section-desc animate-on-scroll">Hành trình đồng hành cùng doanh nghiệp kiến tạo đội ngũ bền vững.</p>
+            </div>
+            <div class="video-frame animate-on-scroll">
+                <div class="video-frame__inner" id="videoPlayer">
+                    <img src="https://img.youtube.com/vi/74frvS7fXN0/maxresdefault.jpg" alt="TRUST Video" class="video-thumb" onclick="window.open('https://youtu.be/74frvS7fXN0', '_blank')">
+                    <button class="video-play-btn" aria-label="Phát video" onclick="window.open('https://youtu.be/74frvS7fXN0', '_blank')">
+                        <svg width="68" height="68" viewBox="0 0 68 68">
+                            <circle cx="34" cy="34" r="33" fill="rgba(0,0,0,.55)" stroke="#fff" stroke-width="2"/>
+                            <polygon points="27,20 27,48 50,34" fill="#fff"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CASE STUDIES ========== -->
+    <section class="case-studies section-padding" id="case-studies">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-on-scroll">Dự án tiêu biểu</span>
+                <h2 class="section-title animate-on-scroll">Success Stories</h2>
+                <p class="section-desc animate-on-scroll">Những dự án thực tế mà TRUST đã đồng hành cùng doanh nghiệp.</p>
+            </div>
+            <div class="case-studies__grid">
+                <div class="case-card animate-on-scroll">
+                    <div class="case-card__image">
+                        <img src="case-mb-ageas.jpg.jpg" alt="MB Ageas Life">
+                        <div class="case-card__overlay"></div>
+                    </div>
+                    <div class="case-card__content">
+                        <div class="case-card__title-row">
+                            <img src="logo-mb-ageas.png.jpg" alt="MB Ageas" class="case-card__content-logo">
+                            <h3 class="case-card__title">MB Ageas Life</h3>
+                        </div>
+                        <p class="case-card__desc">Khẳng định Thương hiệu Cộng hưởng<br>(Thương hiệu đội ngũ)</p>
+                    </div>
+                </div>
+
+                <div class="case-card animate-on-scroll">
+                    <div class="case-card__image">
+                        <img src="case-swpoc-new.jpg" alt="SWPOC">
+                        <div class="case-card__overlay"></div>
+                    </div>
+                    <div class="case-card__content">
+                        <div class="case-card__title-row">
+                            <img src="logo-swpoc-new.png" alt="SWPOC" class="case-card__content-logo">
+                            <h3 class="case-card__title">SWPOC</h3>
+                        </div>
+                        <p class="case-card__desc">Chiến lược Thương hiệu<br>& Văn hóa Doanh nghiệp</p>
+                    </div>
+                </div>
+
+                <div class="case-card animate-on-scroll">
+                    <div class="case-card__image">
+                        <img src="case-viags.jpg.png" alt="VIAGS">
+                        <div class="case-card__overlay"></div>
+                    </div>
+                    <div class="case-card__content">
+                        <div class="case-card__title-row">
+                            <img src="logo-viags.png.jpg" alt="VIAGS" class="case-card__content-logo">
+                            <h3 class="case-card__title">VIAGS</h3>
+                        </div>
+                        <p class="case-card__desc">Truyền thông nội bộ<br>& Thương hiệu đội ngũ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== BUSINESS VALUE ========== -->
+    <section class="value" id="value">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-on-scroll">Giá trị thực tế</span>
+                <h2 class="section-title animate-on-scroll">Giá trị thực tế cho Doanh nghiệp & Đội ngũ</h2>
+                <p class="section-desc animate-on-scroll">Việc áp dụng khai vấn tại TRUST mang lại những giá trị đo
+                    lường được cho tổ chức.</p>
+            </div>
+            <div class="value__grid animate-on-scroll">
+                <div class="value__card">
+                    <div class="value__card-num">01</div>
+                    <h3>Đối với Doanh chủ & Nhà lãnh đạo</h3>
+                    <ul>
+                        <li><strong>Giải phóng nguồn lực:</strong> Giảm bớt sự lệ thuộc của đội ngũ vào lãnh đạo, giúp
+                            doanh chủ tập trung vào chiến lược tầm cao.</li>
+                        <li><strong>Gương soi lãnh đạo:</strong> Có không gian an toàn để xem xét lại nguồn lực, mục
+                            tiêu và định hình tương lai.</li>
+                    </ul>
+                </div>
+                <div class="value__card value__card--accent">
+                    <div class="value__card-num">02</div>
+                    <h3>Đối với Doanh nghiệp</h3>
+                    <ul>
+                        <li><strong>Văn hóa hiệu suất cao:</strong> Kiến tạo môi trường làm việc dựa trên sự tôn trọng,
+                            trách nhiệm và thành công hạnh phúc.</li>
+                        <li><strong>Thành tựu bền vững:</strong> Chuyển đổi từ sự thay đổi của từng cá nhân thành sức
+                            mạnh tổng thể của tổ chức.</li>
+                    </ul>
+                </div>
+                <div class="value__card">
+                    <div class="value__card-num">03</div>
+                    <h3>Đối với Đội ngũ (Manager/Leader)</h3>
+                    <ul>
+                        <li><strong>Năng lực tự chủ:</strong> Phát triển "DNA khai vấn" để biết cách khơi gợi tiềm năng
+                            nhân sự thay vì làm thay họ.</li>
+                        <li><strong>Sự gắn kết:</strong> Nhân viên cảm thấy được tôn trọng và thấu hiểu, dẫn đến sự gắn
+                            kết tự thân với mục tiêu chung.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-on-scroll">FAQ</span>
+                <h2 class="section-title animate-on-scroll">Câu hỏi thường gặp</h2>
+            </div>
+            <div class="faq__grid">
+                <!-- Group 1: Basics -->
+                <div class="faq__col animate-on-scroll">
+                    <h3 class="faq__group-title">I. Tìm hiểu về Khai vấn</h3>
+                    <div class="faq-item">
+                        <button class="faq-item__q" aria-expanded="false">
+                            <span>Khai vấn (Coaching) là gì và không là gì?</span>
+                            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 20 20">
+                                <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" fill="none"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                        <div class="faq-item__a">
+                            <p><strong>Là:</strong> Quá trình đồng hành chuyên nghiệp nhằm kích hoạt tư duy sáng tạo,
+                                giúp cá nhân tự tìm ra giải pháp và tối ưu hóa tiềm năng để định hình tương lai.</p>
+                            <p><strong>Không là:</strong> Đưa ra lời khuyên (Consulting), đào tạo kỹ năng một chiều
+                                (Training), trị liệu tâm lý (Therapy) hay dùng kinh nghiệm cá nhân để áp đặt lộ trình
+                                (Mentoring).</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__q" aria-expanded="false">
+                            <span>Tại sao tôi nên chọn chuyên gia có chứng chỉ ICF?</span>
+                            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 20 20">
+                                <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" fill="none"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                        <div class="faq-item__a">
+                            <p>Chuyên gia ICF cam kết tuân thủ các quy điều đạo đức khắt khe và khung năng lực cốt lõi
+                                toàn cầu.</p>
+                            <p>Điều này đảm bảo tính minh bạch, tôn trọng và sự tận tâm cao nhất trong mối quan hệ giữa
+                                người khai vấn và khách hàng.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__q" aria-expanded="false">
+                            <span>Một lộ trình khai vấn thường kéo dài bao lâu?</span>
+                            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 20 20">
+                                <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" fill="none"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                        <div class="faq-item__a">
+                            <p>Tùy vào mục tiêu, nhưng một lộ trình chuyển hóa tư duy và hành vi thường cần từ <strong>3
+                                    đến 6 tháng</strong> để đạt được kết quả bền vững.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 2: Corporate Impact -->
+                <div class="faq__col animate-on-scroll">
+                    <h3 class="faq__group-title">II. Giải pháp cho Tổ chức</h3>
+                    <div class="faq-item">
+                        <button class="faq-item__q" aria-expanded="false">
+                            <span>Khai vấn mang lại lợi ích gì cho Doanh chủ và Doanh nghiệp?</span>
+                            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 20 20">
+                                <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" fill="none"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                        <div class="faq-item__a">
+                            <p><strong>Với Doanh chủ:</strong> Giúp xem xét lại nguồn lực, làm rõ mục tiêu và giải phóng
+                                tiềm năng lãnh đạo.</p>
+                                <p><strong>Với Doanh nghiệp:</strong> Kiến tạo nền tảng văn hóa phát triển bền vững, tối ưu
+                                hóa năng lực và hiệu suất tổ chức.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__q" aria-expanded="false">
+                            <span>Khai vấn mang lại điều gì cho Đội ngũ (Manager/Leader)?</span>
+                            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 20 20">
+                                <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" fill="none"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                        <div class="faq-item__a">
+                            <p>Giúp thay đổi từ nhận thức bên trong đến hành động mạnh mẽ bên ngoài.</p>
+                            <p>Phát triển năng lực tự chủ để dẫn dắt đội ngũ theo một tinh thần và văn hóa chung của tổ chức.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__q" aria-expanded="false">
+                            <span>Các khóa khai vấn thường được tổ chức trong doanh nghiệp như thế nào?</span>
+                            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 20 20">
+                                <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" fill="none"
+                                    stroke-linecap="round" />
+                                </svg>
+                        </button>
+                        <div class="faq-item__a">
+                            <p><strong>Khai vấn 1:1:</strong> Dành cho HĐQT và quản lý cấp cao để giải quyết các bài
+                                toán điều hành chiến lược.</p>
+                            <p><strong>Khai vấn đội ngũ:</strong> Tập trung vào huấn luyện hiệu suất cao cho các nhóm
+                                quản lý.</p>
+                            <p><strong>Đào tạo kỹ năng:</strong> Trang bị công cụ khai vấn cho doanh nghiệp để ứng dụng
+                                vào quản trị hàng ngày.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 3: Connection & Future -->
+                <div class="faq__col animate-on-scroll">
+                    <h3 class="faq__group-title">III. Hệ sinh thái & Kết nối</h3>
+                    <div class="faq-item">
+                        <button class="faq-item__q" aria-expanded="false">
+                            <span>Văn hóa khai vấn trong doanh nghiệp được mô tả như thế nào?</span>
+                            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 20 20">
+                                <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" fill="none"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                        <div class="faq-item__a">
+                            <p>Là một môi trường dựa trên nền tảng <strong>Tôn trọng – Hợp tác – Phát triển</strong>.</p>
+                            <p>Nơi mọi cá nhân được khơi thông nguồn lực, làm việc trong niềm vui và cùng hướng tới thành tựu chung của tổ chức.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__q" aria-expanded="false">
+                            <span>TRUST có giải pháp nào cho thế hệ lãnh đạo trẻ không?</span>
+                            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 20 20">
+                                <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" fill="none"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                        <div class="faq-item__a">
+                            <p>Chúng tôi có hệ sinh thái <strong>CoachGEN</strong>. Đây là lộ trình đào tạo kỹ năng khai
+                                vấn nền tảng và ứng dụng dành riêng cho thanh niên và các nhà quản lý trẻ.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__q" aria-expanded="false">
+                            <span>Làm thế nào để bắt đầu hành trình khai vấn cùng TRUST?</span>
+                            <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 20 20">
+                                <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" fill="none"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                        <div class="faq-item__a">
+                            <p>Đội ngũ TRUST luôn sẵn sàng thảo luận và thiết kế giải pháp khai vấn hiệu quả, riêng biệt
+                                cho từng cá nhân và doanh nghiệp.</p>
+                            <p>Bạn có thể để lại thông tin tại mục <a href="#contact">Liên hệ</a> để được chuyên viên tư
+                                vấn chi tiết.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== COACHGEN ========== -->
+    <section class="coachgen" id="coachgen">
+        <div class="container">
+            <div class="coachgen__inner animate-on-scroll">
+                <div class="coachgen__content">
+                    <span class="section-tag section-tag--light">Hệ sinh thái</span>
+                    <h2 class="coachgen__title">CoachGEN</h2>
+                    <p class="coachgen__highlight">Lãnh đạo mang DNA khai vấn huấn luyện</p>
+                    <p>Lộ trình đào tạo năng lực khai vấn nền tảng và ứng dụng nâng cao dành cho lãnh đạo/ quản lý, cùng
+                        hệ sinh thái dành riêng cho thế hệ quản lý trẻ.</p>
+                    <a href="#contact" class="btn btn--primary btn--lg">Khám phá CoachGEN</a>
+                </div>
+                <div class="coachgen-visual">
+                    <img src="coachgen-diagram.png" alt="CoachGEN Leaders Diagram" class="coachgen-diagram-static">
+                    <div class="coachgen-visual__animated">
+                    <div class="coachgen-visual__center">
+                        <div class="coachgen-visual__orb"></div>
+                        <span class="coachgen-visual__orb-text">CoachGEN<br>Leaders</span>
+                    </div>
+                    
+                    <div class="coachgen-node node-1">
+                        <div class="coachgen-node__box">Thinking<br>Partner</div>
+                        <div class="coachgen-node__arrow">Think Better</div>
+                    </div>
+                    <div class="coachgen-node node-2">
+                        <div class="coachgen-node__box">Growth<br>Mentor</div>
+                        <div class="coachgen-node__arrow">Grow Stronger</div>
+                    </div>
+                    <div class="coachgen-node node-3">
+                        <div class="coachgen-node__box">Team<br>Facilitator</div>
+                        <div class="coachgen-node__arrow">Lead Better</div>
+                    </div>
+                    <div class="coachgen-node node-4">
+                        <div class="coachgen-node__box">Reflective<br>Practitioner</div>
+                        <div class="coachgen-node__arrow">Rise Higher</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact__inner">
+                <div class="contact__info animate-on-scroll">
+                    <span class="section-tag section-tag--light">Liên hệ</span>
+                    <h2 class="contact__title">Bắt đầu hành trình khai vấn cùng TRUST</h2>
+                    <p>Để lại thông tin để đội ngũ chuyên viên tư vấn liên hệ và thiết kế giải pháp phù hợp cho bạn.</p>
+                    <div class="contact__details">
+                        <div class="contact__detail">
+                            <svg width="20" height="20" viewBox="0 0 20 20">
+                                <path
+                                    d="M3 7l7 5 7-5M3 7v8a2 2 0 002 2h10a2 2 0 002-2V7m-14 0a2 2 0 012-2h10a2 2 0 012 2"
+                                    stroke="currentColor" stroke-width="1.5" fill="none" />
+                            </svg>
+                            <span>info@trustcoaching.vn</span>
+                        </div>
+                        <div class="contact__detail">
+                            <svg width="20" height="20" viewBox="0 0 20 20"><path d="M3 5a2 2 0 012-2h2.28a1 1 0 01.95.68l1.1 3.85a1 1 0 01-.45 1.13l-1.6 1.07a11 11 0 005 5l1.07-1.6a1 1 0 011.13-.45l3.85 1.1a1 1 0 01.68.95V17a2 2 0 01-2 2h-1C7.16 19 1 12.84 1 5V5z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+                            <span>0947 579 696</span>
+                        </div>
+                        <div class="contact__detail">
+                            <svg width="20" height="20" viewBox="0 0 20 20">
+                                <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5" fill="none" />
+                                <path d="M10 2a14.5 14.5 0 000 16M10 2a14.5 14.5 0 010 16M2 10h16" stroke="currentColor"
+                                    stroke-width="1.5" fill="none" />
+                            </svg>
+                            <span>www.trustcoaching.vn</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact__form animate-on-scroll" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Họ và tên *</label>
+                        <input type="text" id="name" name="name" required placeholder="Nhập họ và tên">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="email@company.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại</label>
+                            <input type="tel" id="phone" name="phone" placeholder="09xx xxx xxx">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Công ty / Tổ chức</label>
+                        <input type="text" id="company" name="company" placeholder="Tên công ty">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Nội dung cần tư vấn</label>
+                        <textarea id="message" name="message" rows="4"
+                            placeholder="Mô tả ngắn gọn nhu cầu của bạn..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--lg btn--full">Gửi thông tin</button>
+                    <div class="form-success" id="formSuccess">
+                        <svg width="24" height="24" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10" fill="#10B981" />
+                            <path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" />
+                        </svg>
+                        <span>Cảm ơn bạn! Chúng tôi sẽ liên hệ trong thời gian sớm nhất.</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <p class="footer__desc">Hệ sinh thái khai vấn huấn luyện tiêu chuẩn quốc tế.</p>
+            </div>
+            <div class="footer__links">
+                <h4>Liên kết</h4>
+                <ul>
+                    <li><a href="#about">Về chúng tôi</a></li>
+                    <li><a href="#solutions">Giải pháp</a></li>
+                    <li><a href="#coachgen">CoachGEN</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer__contact">
+                <h4>Liên hệ</h4>
+                <ul>
+                    <li>info@trustcoaching.vn</li>
+                    <li>0947 579 696</li>
+                    <li>www.trustcoaching.vn</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>© 2026 TRUST Coaching & Consulting. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
