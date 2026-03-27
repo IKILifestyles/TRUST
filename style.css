@@ -365,7 +365,7 @@ input,textarea{font:inherit;color:inherit}
 .case-card__desc{font-size:.9rem;color:var(--c-text-muted);line-height:1.6}
 
 @media(max-width:768px){.case-studies__grid{grid-template-columns:1fr;gap:24px}}
-@media(max-width:1024px){.case-studies__grid{grid-template-columns:1fr 1fr}}
+@media(max-width:1024px){.case-studies__grid{grid-template-columns:1fr}}
 
 /* ========================
    VALUE
