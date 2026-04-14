@@ -425,12 +425,13 @@
                     </div>
                     <div class="team-card__content">
                         <h3 class="team-card__name">Nguyễn Hoàng Đức</h3>
-                        <p class="team-card__role">Digital Marketing Leader & Đại diện HCM tại Abaha.</p>
+                        <p class="team-card__role">Founder & CEO ABC Digi</p>
                         <ul class="team-card__bio">
-                            <li>Trainer về SEO và Content tại IM Group.</li>
-                            <li>Sales & Marketing Manager tại Kiến Trúc Hưng Gia.</li>
-                            <li>Digital Marketing Manager tại Du Lịch Hoàn Mỹ.</li>
-                            <li>Founder & CEO ABC Digi.</li>
+                            <li>Trainer về SEO và Content tại IM Group</li>
+                            <li>Sales & Marketing Manager tại Kiến Trúc Hưng Gia</li>
+                            <li>Digital Marketing Manager tại Du Lịch Hoàn Mỹ</li>
+                            <li>Digital Marketing Leader & Đại diện HCM tại Abaha</li>
+                            <li>Giảng viên của FPT Skillking và Đại Học Văn Lang</li>
                         </ul>
                     </div>
                 </div>
@@ -485,13 +486,24 @@
             </div>
             <div class="video-frame animate-on-scroll">
                 <div class="video-frame__inner" id="videoPlayer">
-                    <img src="https://img.youtube.com/vi/74frvS7fXN0/maxresdefault.jpg" alt="TRUST Video" class="video-thumb" onclick="window.open('https://youtu.be/74frvS7fXN0', '_blank')">
-                    <button class="video-play-btn" aria-label="Phát video" onclick="window.open('https://youtu.be/74frvS7fXN0', '_blank')">
+                    <img src="https://img.youtube.com/vi/74frvS7fXN0/maxresdefault.jpg" alt="TRUST Video" class="video-thumb" onclick="playVideo()">
+                    <button class="video-play-btn" aria-label="Phát video" onclick="playVideo()">
                         <svg width="68" height="68" viewBox="0 0 68 68">
                             <circle cx="34" cy="34" r="33" fill="rgba(0,0,0,.55)" stroke="#fff" stroke-width="2"/>
                             <polygon points="27,20 27,48 50,34" fill="#fff"/>
                         </svg>
                     </button>
+                    <script>
+                        function playVideo() {
+                            const vp = document.getElementById('videoPlayer');
+                            // Vì YouTube chặn phát tự động và nhúng, chúng ta sẽ bắt buộc dùng thẻ gốc của HTML và phát file mp4 trực tiếp để không qua YouTube nữa.
+                            vp.innerHTML = `
+                                <video width="100%" height="100%" controls autoplay style="position:absolute; top:0; left:0; width:100%; height:100%; border-radius:inherit; background-color:#000;">
+                                    <source src="trust-video.mp4.mp4" type="video/mp4">
+                                </video>
+                            `;
+                        }
+                    </script>
                 </div>
             </div>
         </div>
@@ -831,7 +843,7 @@
         <div class="container">
             <div class="contact__inner">
                 <div class="contact__info animate-on-scroll">
-                    <span class="section-tag section-tag--light">Liên hệ</span>
+                    <span class="section-tag section-tag--orange">Liên hệ</span>
                     <h2 class="contact__title">Bắt đầu hành trình Khai vấn huấn luyện cùng <br>TRUST Coaching & Consulting</h2>
                     <p>Để lại thông tin để đội ngũ chuyên viên tư vấn liên hệ và thiết kế giải pháp phù hợp cho bạn.</p>
                     <div class="contact__details">

@@ -77,6 +77,7 @@ input,textarea{font:inherit;color:inherit}
 .section-header{text-align:center;margin-bottom:56px}
 .section-tag{display:inline-block;padding:6px 18px;border-radius:999px;font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;background:rgba(255,138,75,.12);color:var(--c-primary);margin-bottom:16px;border:1px solid rgba(255,138,75,.2)}
 .section-tag--light{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.2)}
+.section-tag--orange{background:linear-gradient(135deg, #ff8a4b, #ffb38a);color:#fff;border-color:transparent;box-shadow:0 4px 15px rgba(255,138,75,.3)}
 .section-title{font-family:var(--font-display);font-size:clamp(1.75rem,4vw,2.75rem);font-weight:800;line-height:1.2;letter-spacing:-0.5px;color:#18428c}
 .section-title em{color:#18428c;font-style:normal}
 .section-desc{max-width:640px;margin:16px auto 0;color:var(--c-text-muted);font-size:1.1rem}
@@ -260,7 +261,7 @@ input,textarea{font:inherit;color:inherit}
 .team-card__name{font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--c-text);margin-bottom:4px;line-height:1.2;display:flex;align-items:center;justify-content:center;gap:8px}
 .name-badge{height:24px;width:auto;object-fit:contain}
 .team-card__role{font-size:0.8rem;font-weight:600;color:var(--c-primary);margin-bottom:16px;opacity:.85;line-height:1.4}
-.team-card__bio{list-style:none;padding:0;margin-top:auto;text-align:left}
+.team-card__bio{list-style:none;padding:0;margin-top:20px;margin-bottom:auto;text-align:left}
 .team-card__bio li{font-size:0.8rem;color:var(--c-text-muted);margin-bottom:8px;padding-left:16px;position:relative;line-height:1.4;word-break:break-word}
 .team-card__bio li::before{content:"•";position:absolute;left:0;color:var(--c-accent);font-weight:bold}
 
